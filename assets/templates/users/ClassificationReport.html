@@ -1,0 +1,34 @@
+{%extends 'users/userbase.html'%}
+
+{%block contents%}
+
+<section id="hero" class="d-flex align-items-center">
+    <div class="container">
+        <br/><br/>
+        <h2>Classification report Details</h2><br/>
+        <p>
+            <table class="table table-bordered bg-light text-dark ">
+                    <thead>
+                    <th>S.no</th>
+                    <th>Algorithm Name</th>
+                    <th>Accuracy</th>
+                    </thead>
+                    <tbody>
+
+                    {% for key, values in myDict.items  %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{key}}</td>
+                        <td>{{values}}</td>
+                    </tr>
+                    {%endfor%}
+                    </tbody>
+                </table>
+        </p>
+        <br/>
+
+    </div>
+</section>
+
+{%endblock%}
+

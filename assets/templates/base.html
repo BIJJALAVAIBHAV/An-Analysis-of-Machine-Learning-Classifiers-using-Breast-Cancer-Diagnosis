@@ -1,0 +1,178 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>An Analysis of Machine Learning Classifiers in
+Breast Cancer Diagnosis</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{%static 'img/favicon.png'%}" rel="icon">
+  <link href="{%static 'img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{%static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/icofont/icofont.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/venobox/venobox.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/owl.carousel/owl.carousel.min.css'%}" rel="stylesheet">
+  <link href="{%static 'vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="#">Breast Cancer Diagnosis</a></h1>
+
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{%url 'index'%}">Home</a></li>
+          <li><a href="{%url 'UserLogin'%}">Users</a></li>
+          <li><a href="{%url 'AdminLogin'%}">Admins</a></li>
+          <li><a href="{%url 'UserRegister'%}">Register</a></li>
+
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <!--<a href="#appointment" class="appointment-btn scrollto">Make an Appointment</a>-->
+
+    </div>
+  </header><!-- End Header -->
+
+  {%block contents%}
+
+  {%endblock%}
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+ <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Algorithms</h2>
+          <p>A deep belief network was used for the detection of breast cancer using a technique of back-propagation supervised path using the Wisconsin Breast Cancer Dataset (WBCD). This approach offers a best accuracy in the classification task</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-heart-beat"></i></div>
+              <h4><a href="">Data Set</a></h4>
+              <p>All data are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. Altogether, the data set composition contains 569 rows and 33 columns. Among the 33 columns, the first two are the identification number and diagnosis (M = malignant, B = benign).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-drug"></i></div>
+              <h4><a href="">Multi-Layer Perceptron</a></h4>
+              <p>Multilayer Perceptron (MLP) is a classifier based on the neural network’s, very similar to perceptron but with more layers. Each output layer receives the stimulus of the intermediate layer, building a set of appropriate outputs. MLP uses a supervised learning technique knew as backpropagation function, which learns iteratively by processing data set of training examples, comparing the network’s prediction for each target value</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-dna-alt-2"></i></div>
+              <h4><a href="">Decision Tree</a></h4>
+              <p>Decision tree algorithms are considered an alternative for regressions and classifiers tasks. the Decision Tree Algorithms structure can be compared to a set of rules (If-then), classifying new samples and trying to develop an understandable and accurate model. Thereby, the Decision Tree algorithm operates such as others Supervised Learning techniques, working with sets for training and tests.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-heartbeat"></i></div>
+              <h4><a href="">Random Forest</a></h4>
+              <p>Defined as an ensemble learner, Random Forest works creating multiple classifiers and regression trees, each one trained based on the subset of training examples and the subset of all given features at random. Each decision tree, the input enters at the root of the tree and traverses down the tree according to the split decision at each node.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-disabled"></i></div>
+              <h4><a href="">Support Vector Machine</a></h4>
+              <p>Support Vector Machines (SVMs) is a supervised machine learning technique, having great theoretical foundations and excellent empirical successes. The SVM has the constraint which makes the total weight for the positive class equal to that of the negative class. This kind of technique has been applied to different classification tasks such as text classification, object recognition, as well as prediction tasks.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-autism"></i></div>
+              <h4><a href="">Deep Neural Network</a></h4>
+              <p>Lastly, we considered using a deep neural network to verify their performance related to this database. Presenting relevant results in recent studies, this network has been used in many tasks, mainly image classification.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Alex Corporations</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{%static 'vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{%static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{%static 'vendor/jquery.easing/jquery.easing.min.js'%}"></script>
+  <script src="{%static 'vendor/php-email-form/validate.js'%}"></script>
+  <script src="{%static 'vendor/venobox/venobox.min.js'%}"></script>
+  <script src="{%static 'vendor/waypoints/jquery.waypoints.min.js'%}"></script>
+  <script src="{%static 'vendor/counterup/counterup.min.js'%}"></script>
+  <script src="{%static 'vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+  <script src="{%static 'vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{%static 'js/main.js'%}"></script>
+
+</body>
+
+</html>
